@@ -1,0 +1,87 @@
+.container {
+    background-color: #d4c8b0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .heading {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+.container .heading h2 {
+    font-size: 2rem;
+}
+
+form {
+    width: 50vw;
+    background-color: #fff;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+form .name {
+    display: flex;
+    justify-content: space-between;
+}
+form .name .box {
+    width: 48%;
+}
+
+form input:focus {
+    outline: none;
+    border-color: blue;
+  }
+  textarea:focus {
+    outline: none;
+    border-color: blue;
+  }
+
+form input, textarea {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    margin: 40px 0;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    border-bottom: 2px solid black;
+}
+
+form label {
+    font-weight: 600;  
+}
+form label span {
+    color: blue;
+}
+
+input[type = submit] {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+}
+input[type = submit]:hover {
+    background-color: white;
+    color: blue;
+}
+
+@media (max-width: 940px) {
+    form {
+        width: 100%;
+    }
+    form .name {
+        flex-direction: column;
+    }
+    form .name .box {
+        width: 100%;
+    }
+}

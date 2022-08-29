@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #34aeeb;
+}
+
+.active {
+    color: #34aeeb !important;
+}
+nav .menu-btn {
+    display: none;
+}
+
+.dot {
+    width: 1rem;
+    height: 1rem;
+    background: blue;
+    margin-right: 8px;
+}
+
+#click {
+    display: none;
+}
+
+#click:checked~ul {
+    left: 0%;
+}
+
+/* Main */
+
+.main {
+    width: 100%;
+    min-height: 110vh;
+    background: linear-gradient(
+        to right,
+        #d4c8b0 0%,
+        #d4c8b0 40%,
+        #fff 40%,
+        #fff 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info {
+    width: 50vw;
+    display: flex;
+    min-height: 75vh;
+    margin-left: -10vw;
+}
+
+.image-name {
+    width: 50%;
+    background: #e3dbca;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-box img {
+    width: 50%;
+    border-radius: 50%;
+    margin: 10% 0;
+}
+
+.image-name .name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 2px solid blue;
+    padding-bottom: 5%;
+    font-size: 40px;
+}
+
+.image-name .profession {
+    margin-top: 5%;
+    font-size: 1.2rem;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.profession .buttons {
+    display: none;
+}
+
+.social-icons-list {
+    background: #fff;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.6rem;
+}
+
+.social-icons-list a {
+    padding: 10px;
+}
+
+.social-icons-list a img {
+    width: 20px;
+}
+
+.infocontainer {
+    width: 50%;
+    padding: 20px;
+}
+
+.divinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divinfo .hello {
+    font-size: 5rem;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 10% 0 3% 0;
+    font-weight: bold;
+}
+
+.divinfo .about {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.divinfo .moreInfo {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.buttons button {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    margin: 15px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons .btn-1 {
+    background-color: dodgerblue;
+    color: white;
+    margin-right: 10px;
+}
+
+.buttons .btn-2 {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.buttons .btn-1:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.buttons .btn-2:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-follow-email {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 5% 0;
+    border-top: 1px solid gray;
+    padding-top: 3%;
+}
+
+.phone-follow-email h4 {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    margin-top: 1.2rem;
+}
+
+.phone-follow-email a {
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.footer .footer-social-icons-list a {
+    margin: 6px;
+}
+
+.footer .footer-social-icons-list a img {
+    width: 1rem;
+}
+
+.copyringt {
+    width: 95%;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+@media (max-width: 940px) {
+
+    nav {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    nav .menu-btn {
+        display: block;
+        font-size: 2rem;
+        z-index: 1;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        height: 100vh;
+        width: 100vw;
+        display: block !important;
+        text-align: center;
+        background: #d4c8b0;
+        padding-top: 85px;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .main {
+        width: 100%;
+        background: linear-gradient(to top, #d4c8b0 0 60%, #fff  60% 100%);
+    }
+    .main-info {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .image-name, .infocontainer {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .profession .buttons {
+        display: block;
+        margin-top: 10px;
+    }
+    .divinfo .buttons {
+        display: none;
+    }
+    .phone-follow-email {
+        flex-direction: column;
+    }
+}
